@@ -1,0 +1,284 @@
+EESchema Schematic File Version 2
+LIBS:74hct4053
+LIBS:capacitor_smd_handsoldering
+LIBS:conn
+LIBS:power
+LIBS:PTC_handsoldering
+LIBS:resistor_0805_handsoldering
+LIBS:texas
+LIBS:XTAL_SMD_HandSoldering
+LIBS:ltc5507
+LIBS:proClase2-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L XTAL X1
+U 1 1 56F93E47
+P 1800 2200
+F 0 "X1" H 1800 2050 60  0000 C CNN
+F 1 "XTAL" H 1800 2350 60  0000 C CNN
+F 2 "" H 1800 2200 60  0000 C CNN
+F 3 "" H 1800 2200 60  0000 C CNN
+	1    1800 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L LTC5507 U1
+U 1 1 56F93F5A
+P 2600 3700
+F 0 "U1" H 2600 4050 60  0000 C CNN
+F 1 "LTC5507" H 2600 3400 60  0000 C CNN
+F 2 "" H 2600 4050 60  0000 C CNN
+F 3 "" H 2600 4050 60  0000 C CNN
+	1    2600 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HCT4053 U2
+U 1 1 56F93F95
+P 4550 1900
+F 0 "U2" H 4550 2400 60  0000 C CNN
+F 1 "74HCT4053" H 4550 1400 60  0000 C CNN
+F 2 "" H 4550 1950 60  0000 C CNN
+F 3 "" H 4550 1950 60  0000 C CNN
+	1    4550 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR1
+U 1 1 56F9400E
+P 1600 3750
+F 0 "#PWR1" H 1600 3500 50  0001 C CNN
+F 1 "GND" H 1600 3600 50  0000 C CNN
+F 2 "" H 1600 3750 60  0000 C CNN
+F 3 "" H 1600 3750 60  0000 C CNN
+	1    1600 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR2
+U 1 1 56F94028
+P 1650 3500
+F 0 "#PWR2" H 1650 3350 50  0001 C CNN
+F 1 "+3V3" H 1650 3640 50  0000 C CNN
+F 2 "" H 1650 3500 60  0000 C CNN
+F 3 "" H 1650 3500 60  0000 C CNN
+	1    1650 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitor_SMD_HandSoldering C5
+U 1 1 56F94042
+P 3450 3700
+F 0 "C5" H 3450 3850 60  0000 C CNN
+F 1 "pf" H 3450 3600 60  0000 C CNN
+F 2 "" H 3450 3700 60  0000 C CNN
+F 3 "" H 3450 3700 60  0000 C CNN
+	1    3450 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitor_SMD_HandSoldering C4
+U 1 1 56F94079
+P 3100 3050
+F 0 "C4" H 3100 3200 60  0000 C CNN
+F 1 "pf" H 3200 2900 60  0000 C CNN
+F 2 "" H 3100 3050 60  0000 C CNN
+F 3 "" H 3100 3050 60  0000 C CNN
+	1    3100 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3050 3700 3200 3700
+$Comp
+L +3V3 #PWR4
+U 1 1 56F94142
+P 4000 3650
+F 0 "#PWR4" H 4000 3500 50  0001 C CNN
+F 1 "+3V3" H 4000 3790 50  0000 C CNN
+F 2 "" H 4000 3650 60  0000 C CNN
+F 3 "" H 4000 3650 60  0000 C CNN
+	1    4000 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3850 4000 3650
+Wire Wire Line
+	3050 3850 3700 3850
+Wire Wire Line
+	3700 3850 4000 3850
+Wire Wire Line
+	3700 3700 3700 3850
+Connection ~ 3700 3850
+Wire Wire Line
+	3100 2100 3100 2800
+Wire Wire Line
+	3100 2100 4050 2100
+Wire Wire Line
+	3100 3300 3100 3550
+Wire Wire Line
+	3100 3550 3050 3550
+Wire Wire Line
+	1650 3500 1650 3550
+Wire Wire Line
+	1650 3550 2100 3550
+Wire Wire Line
+	1600 3750 1600 3700
+Wire Wire Line
+	1600 3700 2100 3700
+Text HLabel 1450 4350 0    60   Input ~ 0
+ENVELOPE_OUT
+Wire Wire Line
+	1450 4350 2100 4350
+Wire Wire Line
+	2100 4350 2100 3850
+$Comp
+L GND #PWR5
+U 1 1 56F94270
+P 5150 2350
+F 0 "#PWR5" H 5150 2100 50  0001 C CNN
+F 1 "GND" H 5150 2200 50  0000 C CNN
+F 2 "" H 5150 2350 60  0000 C CNN
+F 3 "" H 5150 2350 60  0000 C CNN
+	1    5150 2350
+	1    0    0    -1  
+$EndComp
+Text HLabel 5200 2100 2    60   Input ~ 0
+DIG_CONTROL
+$Comp
+L GND #PWR6
+U 1 1 56F942A3
+P 5700 1700
+F 0 "#PWR6" H 5700 1450 50  0001 C CNN
+F 1 "GND" H 5700 1550 50  0000 C CNN
+F 2 "" H 5700 1700 60  0000 C CNN
+F 3 "" H 5700 1700 60  0000 C CNN
+	1    5700 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR8
+U 1 1 56F942C1
+P 6150 1600
+F 0 "#PWR8" H 6150 1350 50  0001 C CNN
+F 1 "GND" H 6150 1450 50  0000 C CNN
+F 2 "" H 6150 1600 60  0000 C CNN
+F 3 "" H 6150 1600 60  0000 C CNN
+	1    6150 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitor_SMD_HandSoldering C6
+U 1 1 56F942E5
+P 6150 1200
+F 0 "C6" H 6150 1100 60  0000 C CNN
+F 1 "100nF" H 6150 1300 60  0000 C CNN
+F 2 "" H 6150 1200 60  0000 C CNN
+F 3 "" H 6150 1200 60  0000 C CNN
+	1    6150 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR7
+U 1 1 56F94338
+P 6150 750
+F 0 "#PWR7" H 6150 600 50  0001 C CNN
+F 1 "+5V" H 6150 890 50  0000 C CNN
+F 2 "" H 6150 750 60  0000 C CNN
+F 3 "" H 6150 750 60  0000 C CNN
+	1    6150 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR3
+U 1 1 56F94634
+P 3500 1300
+F 0 "#PWR3" H 3500 1050 50  0001 C CNN
+F 1 "GND" H 3500 1150 50  0000 C CNN
+F 2 "" H 3500 1300 60  0000 C CNN
+F 3 "" H 3500 1300 60  0000 C CNN
+	1    3500 1300
+	1    0    0    -1  
+$EndComp
+Text HLabel 3900 1550 0    60   Input ~ 0
+Switch_IN-
+Text HLabel 3850 2200 0    60   Input ~ 0
+Switch_IN+
+Wire Wire Line
+	3500 1300 4050 1300
+Wire Wire Line
+	4050 1300 4050 1500
+Wire Wire Line
+	3900 1550 4050 1550
+Wire Wire Line
+	4050 1550 4050 1600
+Wire Wire Line
+	5050 1700 5150 1700
+Wire Wire Line
+	5150 1700 5700 1700
+Wire Wire Line
+	5050 1600 5150 1600
+Wire Wire Line
+	5150 1600 5150 1700
+Wire Wire Line
+	5150 1700 5150 1800
+Connection ~ 5150 1700
+Wire Wire Line
+	5150 1800 5050 1800
+Wire Wire Line
+	5050 2000 5050 2100
+Wire Wire Line
+	5050 2100 5200 2100
+Wire Wire Line
+	5050 2200 5150 2200
+Wire Wire Line
+	5150 2200 5150 2350
+Wire Wire Line
+	6150 750  6150 850 
+Wire Wire Line
+	6150 850  6150 950 
+Wire Wire Line
+	6150 1450 6150 1600
+Wire Wire Line
+	5050 1500 5700 1500
+Wire Wire Line
+	5700 1500 5700 850 
+Wire Wire Line
+	5700 850  6150 850 
+Connection ~ 6150 850 
+Wire Wire Line
+	3850 2200 4050 2200
+NoConn ~ 4050 1800
+NoConn ~ 4050 1900
+NoConn ~ 4050 2000
+Text Label 1750 2600 2    60   ~ 0
+xtal_N
+Text Label 1800 2000 2    60   ~ 0
+xtal_P
+Wire Wire Line
+	1800 2400 1800 2600
+Wire Wire Line
+	1800 2600 1750 2600
+Text Label 3550 2350 2    60   ~ 0
+xtal_N
+Wire Wire Line
+	3550 2350 4050 2350
+Wire Wire Line
+	4050 2350 4050 2300
+Text Label 3500 1700 2    60   ~ 0
+xtal_P
+Wire Wire Line
+	3500 1700 4050 1700
+$EndSCHEMATC
