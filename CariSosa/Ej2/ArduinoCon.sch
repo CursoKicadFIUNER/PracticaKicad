@@ -1,14 +1,13 @@
 EESchema Schematic File Version 2
-LIBS:power
-LIBS:conn
-LIBS:resistor_0805_handsoldering
-LIBS:PTC_handsoldering
-LIBS:texas
-LIBS:capacitor_smd_handsoldering
-LIBS:XTAL_SMD_HandSoldering
 LIBS:74hct4053
+LIBS:capacitor_smd_handsoldering
+LIBS:conn
+LIBS:power
+LIBS:PTC_handsoldering
+LIBS:resistor_0805_handsoldering
+LIBS:texas
+LIBS:XTAL_SMD_HandSoldering
 LIBS:ltc5507
-LIBS:OpenQCM_KiCad-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
