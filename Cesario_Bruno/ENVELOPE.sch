@@ -1,0 +1,320 @@
+EESchema Schematic File Version 2
+LIBS:74hct4053
+LIBS:capacitor_smd_handsoldering
+LIBS:conn
+LIBS:ltc5507
+LIBS:power
+LIBS:PTC_handsoldering
+LIBS:resistor_0805_handsoldering
+LIBS:texas
+LIBS:XTAL_SMD_HandSoldering
+LIBS:Ej2-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 8000 2250 2    60   Input ~ 0
+DIG_CONTROL
+Text HLabel 3550 5400 0    60   Input ~ 0
+ENVELOPE_OUT
+Text HLabel 6350 1750 0    60   Input ~ 0
+Switch_IN-
+Text HLabel 6350 2350 0    60   Input ~ 0
+Switch_IN+
+$Comp
+L LTC5507 U3
+U 1 1 56F95F3E
+P 4300 4850
+F 0 "U3" H 4300 5150 60  0000 C CNN
+F 1 "LTC5507" H 4300 4450 60  0000 C CNN
+F 2 "" H 4100 4850 60  0000 C CNN
+F 3 "" H 4100 4850 60  0000 C CNN
+	1    4300 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitor_SMD_HandSoldering C5
+U 1 1 56F96131
+P 5600 4900
+F 0 "C5" H 5600 5050 60  0000 C CNN
+F 1 "pF" H 5700 4750 60  0000 C CNN
+F 2 "" H 5600 4900 60  0000 C CNN
+F 3 "" H 5600 4900 60  0000 C CNN
+	1    5600 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Capacitor_SMD_HandSoldering C6
+U 1 1 56F961B0
+P 8750 1850
+F 0 "C6" H 8750 2000 60  0000 C CNN
+F 1 "100nF" H 8850 1700 60  0000 C CNN
+F 2 "" H 8750 1850 60  0000 C CNN
+F 3 "" H 8750 1850 60  0000 C CNN
+	1    8750 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L 74HCT4053 U2
+U 1 1 56F96210
+P 7350 2050
+F 0 "U2" H 7350 2550 60  0000 C CNN
+F 1 "74HCT4053" H 7350 1550 60  0000 C CNN
+F 2 "" H 7350 2100 60  0000 C CNN
+F 3 "" H 7350 2100 60  0000 C CNN
+	1    7350 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 56F96251
+P 8750 1050
+F 0 "#PWR?" H 8750 900 50  0001 C CNN
+F 1 "+5V" H 8750 1190 50  0000 C CNN
+F 2 "" H 8750 1050 60  0000 C CNN
+F 3 "" H 8750 1050 60  0000 C CNN
+	1    8750 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56F9626D
+P 6500 1300
+F 0 "#PWR?" H 6500 1050 50  0001 C CNN
+F 1 "GND" H 6500 1150 50  0000 C CNN
+F 2 "" H 6500 1300 60  0000 C CNN
+F 3 "" H 6500 1300 60  0000 C CNN
+	1    6500 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56F96289
+P 8200 2000
+F 0 "#PWR?" H 8200 1750 50  0001 C CNN
+F 1 "GND" H 8200 1850 50  0000 C CNN
+F 2 "" H 8200 2000 60  0000 C CNN
+F 3 "" H 8200 2000 60  0000 C CNN
+	1    8200 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56F962A5
+P 8200 2500
+F 0 "#PWR?" H 8200 2250 50  0001 C CNN
+F 1 "GND" H 8200 2350 50  0000 C CNN
+F 2 "" H 8200 2500 60  0000 C CNN
+F 3 "" H 8200 2500 60  0000 C CNN
+	1    8200 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 1300 6500 1650
+Wire Wire Line
+	6500 1650 6850 1650
+Wire Wire Line
+	7850 1750 8200 1750
+Wire Wire Line
+	8200 1750 8200 2000
+Wire Wire Line
+	7850 1850 8200 1850
+Connection ~ 8200 1850
+Wire Wire Line
+	7850 1950 8200 1950
+Connection ~ 8200 1950
+Wire Wire Line
+	8200 2500 8200 2350
+Wire Wire Line
+	8200 2350 7850 2350
+Wire Wire Line
+	8750 1600 8750 1050
+$Comp
+L GND #PWR?
+U 1 1 56F963B9
+P 8750 2300
+F 0 "#PWR?" H 8750 2050 50  0001 C CNN
+F 1 "GND" H 8750 2150 50  0000 C CNN
+F 2 "" H 8750 2300 60  0000 C CNN
+F 3 "" H 8750 2300 60  0000 C CNN
+	1    8750 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 2300 8750 2100
+Wire Wire Line
+	7850 1650 8200 1650
+Wire Wire Line
+	8200 1650 8200 1300
+Wire Wire Line
+	8200 1300 8750 1300
+Connection ~ 8750 1300
+Wire Wire Line
+	6350 2350 6850 2350
+Wire Wire Line
+	6350 1750 6850 1750
+$Comp
+L XTAL X1
+U 1 1 56F964F2
+P 1750 2300
+F 0 "X1" H 1750 2400 60  0000 C CNN
+F 1 "XTAL" H 1750 2200 60  0000 C CNN
+F 2 "" H 1750 2300 60  0000 C CNN
+F 3 "" H 1750 2300 60  0000 C CNN
+	1    1750 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 2100 1750 1900
+Wire Wire Line
+	1750 2500 1750 2700
+Text Label 1750 2000 0    60   ~ 0
+xtal_P
+Text Label 1750 2600 0    60   ~ 0
+xtal_N
+Text Label 5900 1900 0    60   ~ 0
+xtal_P
+Wire Wire Line
+	5900 1900 6450 1900
+Wire Wire Line
+	6450 1900 6450 1850
+Wire Wire Line
+	6450 1850 6850 1850
+Text Label 5900 2600 0    60   ~ 0
+xtal_N
+Wire Wire Line
+	5900 2600 6600 2600
+Wire Wire Line
+	6600 2600 6600 2450
+Wire Wire Line
+	6600 2450 6850 2450
+NoConn ~ 6550 1950
+NoConn ~ 6550 2050
+NoConn ~ 6550 2150
+Wire Wire Line
+	6550 1950 6850 1950
+Wire Wire Line
+	6550 2050 6850 2050
+Wire Wire Line
+	6550 2150 6850 2150
+$Comp
+L Capacitor_SMD_HandSoldering C4
+U 1 1 56F96709
+P 5000 4100
+F 0 "C4" H 5000 4250 60  0000 C CNN
+F 1 "pF" H 5100 3950 60  0000 C CNN
+F 2 "" H 5000 4100 60  0000 C CNN
+F 3 "" H 5000 4100 60  0000 C CNN
+	1    5000 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 3850 5000 2250
+Wire Wire Line
+	5000 2250 6850 2250
+Wire Wire Line
+	5000 4350 5000 4750
+Wire Wire Line
+	5000 4750 4900 4750
+Wire Wire Line
+	5350 4900 4900 4900
+Wire Wire Line
+	6000 5050 4900 5050
+Wire Wire Line
+	6000 4850 6000 5050
+Wire Wire Line
+	6000 4900 5850 4900
+$Comp
+L +3.3V #PWR?
+U 1 1 56F968B1
+P 6000 4850
+F 0 "#PWR?" H 6000 4700 50  0001 C CNN
+F 1 "+3.3V" H 6000 4990 50  0000 C CNN
+F 2 "" H 6000 4850 60  0000 C CNN
+F 3 "" H 6000 4850 60  0000 C CNN
+	1    6000 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 6000 4900
+$Comp
+L +3.3V #PWR?
+U 1 1 56F9695D
+P 3550 4600
+F 0 "#PWR?" H 3550 4450 50  0001 C CNN
+F 1 "+3.3V" H 3550 4740 50  0000 C CNN
+F 2 "" H 3550 4600 60  0000 C CNN
+F 3 "" H 3550 4600 60  0000 C CNN
+	1    3550 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56F969FE
+P 3400 4950
+F 0 "#PWR?" H 3400 4700 50  0001 C CNN
+F 1 "GND" H 3400 4800 50  0000 C CNN
+F 2 "" H 3400 4950 60  0000 C CNN
+F 3 "" H 3400 4950 60  0000 C CNN
+	1    3400 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 5400 3650 5400
+Wire Wire Line
+	3650 5400 3650 5050
+Wire Wire Line
+	3650 5050 3700 5050
+Wire Wire Line
+	3400 4950 3400 4900
+Wire Wire Line
+	3400 4900 3700 4900
+Wire Wire Line
+	3550 4750 3700 4750
+Wire Wire Line
+	3550 4750 3550 4600
+Wire Wire Line
+	8000 2250 7850 2250
+Wire Wire Line
+	7900 2250 7900 2150
+Wire Wire Line
+	7900 2150 7850 2150
+Connection ~ 7900 2250
+Wire Notes Line
+	1750 3550 9750 3550
+Wire Notes Line
+	9750 3550 9750 800 
+Wire Notes Line
+	9750 800  4750 800 
+Wire Notes Line
+	4750 800  4750 3550
+Wire Notes Line
+	1750 3550 1750 5750
+Wire Notes Line
+	1750 5750 6500 5750
+Wire Notes Line
+	6500 5750 6500 3550
+Wire Notes Line
+	1250 1550 1250 3100
+Wire Notes Line
+	1250 3100 2350 3100
+Wire Notes Line
+	2350 3100 2350 1550
+Wire Notes Line
+	2350 1550 1250 1550
+Text Notes 1350 1500 0    60   ~ 0
+Crystal
+Text Notes 1850 3500 0    60   ~ 0
+Envelope detector
+Text Notes 4850 750  0    60   ~ 0
+Switch
+$EndSCHEMATC
