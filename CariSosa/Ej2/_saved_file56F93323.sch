@@ -21,10 +21,10 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 9800 1900 0    60   Input ~ 0
+Text HLabel 9800 1600 0    60   Input ~ 0
 FREQUENCY_IN
-Text HLabel 9800 2150 0    60   Output ~ 0
+Text HLabel 9700 2250 0    60   Output ~ 0
 DIG_CONTROL
-Text HLabel 9800 2450 0    60   Input ~ 0
+Text HLabel 9700 3100 0    60   Input ~ 0
 ENVELOPE_IN
 $EndSCHEMATC

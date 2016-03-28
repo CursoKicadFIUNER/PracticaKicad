@@ -21,10 +21,10 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 10050 1700 0    60   Output ~ 0
-FREQUENCY_OUT
-Text HLabel 10100 2450 0    60   Output ~ 0
+Text HLabel 9750 1250 0    60   Input ~ 0
 Switch_IN+
-Text HLabel 10100 2900 0    60   Output ~ 0
+Text HLabel 9750 1700 0    60   Input ~ 0
 Switch_IN-
+Text HLabel 8150 2450 0    60   Output ~ 0
+frequency_out
 $EndSCHEMATC
