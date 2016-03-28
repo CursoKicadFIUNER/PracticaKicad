@@ -21,12 +21,12 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 9800 1400 0    60   Input ~ 0
+Text HLabel 1650 800  0    60   Input ~ 0
 DIG_CONTROL
-Text HLabel 9800 1800 0    60   Input ~ 0
+Text HLabel 1650 1200 0    60   Input ~ 0
 ENVELOPE_OUT
-Text HLabel 9750 2250 0    60   Input ~ 0
+Text HLabel 1600 1650 0    60   Input ~ 0
 Switch_IN-
-Text HLabel 9750 2650 0    60   Input ~ 0
+Text HLabel 1600 2050 0    60   Input ~ 0
 Switch_IN+
 $EndSCHEMATC
