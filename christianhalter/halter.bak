@@ -1,0 +1,84 @@
+EESchema Schematic File Version 2
+LIBS:74hct4053
+LIBS:capacitor_smd_handsoldering
+LIBS:conn
+LIBS:power
+LIBS:PTC_handsoldering
+LIBS:resistor_0805_handsoldering
+LIBS:texas
+LIBS:XTAL_SMD_HandSoldering
+LIBS:ltc5507
+LIBS:halter-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title "Ejemplo2"
+Date "2016-03-28"
+Rev ""
+Comp "FIUNER"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 1700 1950 1700 2500
+U 56F9331B
+F0 "ARDUINO" 60
+F1 "ARDUINO.sch" 60
+F2 "FREQUENCY_IN" I R 3400 2300 60 
+F3 "ENVELOPE_IN" I R 3400 3000 60 
+F4 "DIG_CONTROL" O R 3400 2650 60 
+$EndSheet
+$Sheet
+S 7800 1800 2150 1200
+U 56F93377
+F0 "OSC_DRIVER" 60
+F1 "OSC_DRIVER.sch" 60
+F2 "FREQUENCY_OUT" O L 7800 2750 60 
+F3 "Switch_IN+" O R 9950 2100 60 
+F4 "Switch_IN-" O R 9950 2500 60 
+$EndSheet
+$Sheet
+S 5050 3950 3450 1900
+U 56F93397
+F0 "SWITCH" 60
+F1 "SWITCH.sch" 60
+F2 "Switch_IN+" I R 8500 4800 60 
+F3 "Switch_IN-" I R 8500 4350 60 
+F4 "DIG_CONTROL" I L 5050 4550 60 
+F5 "ENVELOPE_OUT" I L 5050 5000 60 
+$EndSheet
+Wire Wire Line
+	3400 2300 6050 2300
+Wire Wire Line
+	6050 2300 6050 2750
+Wire Wire Line
+	6050 2750 7800 2750
+Wire Wire Line
+	3400 2650 4250 2650
+Wire Wire Line
+	4250 2650 4250 4550
+Wire Wire Line
+	4250 4550 5050 4550
+Wire Wire Line
+	3400 3000 3950 3000
+Wire Wire Line
+	3950 3000 3950 5000
+Wire Wire Line
+	3950 5000 5050 5000
+Wire Wire Line
+	8500 4350 10200 4350
+Wire Wire Line
+	10200 4350 10200 2500
+Wire Wire Line
+	10200 2500 9950 2500
+Wire Wire Line
+	9950 2100 10450 2100
+Wire Wire Line
+	10450 2100 10450 4800
+Wire Wire Line
+	10450 4800 8500 4800
+$EndSCHEMATC
