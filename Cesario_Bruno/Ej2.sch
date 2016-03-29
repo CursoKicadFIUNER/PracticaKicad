@@ -2,12 +2,12 @@ EESchema Schematic File Version 2
 LIBS:74hct4053
 LIBS:capacitor_smd_handsoldering
 LIBS:conn
+LIBS:ltc5507
 LIBS:power
 LIBS:PTC_handsoldering
 LIBS:resistor_0805_handsoldering
 LIBS:texas
 LIBS:XTAL_SMD_HandSoldering
-LIBS:Ej2-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268

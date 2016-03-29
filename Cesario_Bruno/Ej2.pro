@@ -1,4 +1,4 @@
-update=28/03/2016 10:27:31
+update=28/03/2016 22:07:28
 version=1
 last_client=kicad
 [general]
@@ -31,11 +31,12 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
-LibName1=OpenQCM.libs/74hct4053
-LibName2=OpenQCM.libs/capacitor_smd_handsoldering
-LibName3=OpenQCM.libs/conn
-LibName4=OpenQCM.libs/power
-LibName5=OpenQCM.libs/PTC_handsoldering
-LibName6=OpenQCM.libs/resistor_0805_handsoldering
-LibName7=OpenQCM.libs/texas
-LibName8=OpenQCM.libs/XTAL_SMD_HandSoldering
+LibName1=libs/74hct4053
+LibName2=libs/capacitor_smd_handsoldering
+LibName3=libs/conn
+LibName4=libs/ltc5507
+LibName5=libs/power
+LibName6=libs/PTC_handsoldering
+LibName7=libs/resistor_0805_handsoldering
+LibName8=libs/texas
+LibName9=libs/XTAL_SMD_HandSoldering
