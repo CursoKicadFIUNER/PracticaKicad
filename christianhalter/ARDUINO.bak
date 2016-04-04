@@ -133,18 +133,6 @@ F 3 "" H 7850 4500 60  0000 C CNN
 	1    7850 4500
 	1    0    0    -1  
 $EndComp
-$Comp
-L PTC_HandSoldering PTC1
-U 1 1 56E7458C
-P 7850 4050
-F 0 "PTC1" H 7850 4200 60  0000 C CNN
-F 1 "PTC_HandSoldering" H 7850 3900 60  0001 C CNN
-F 2 "halter:R_0805_HandSoldering" H 7850 4050 60  0001 C CNN
-F 3 "" H 7850 4050 60  0000 C CNN
-F 4 "Value" H 7850 4050 60  0001 C CNN "Digikey/Mouser"
-	1    7850 4050
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3700 3300 3950 3300
 Wire Wire Line
@@ -279,4 +267,15 @@ F 3 "" H 3950 3050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 3950 3300
+$Comp
+L PTC_HandSoldering PTC1
+U 1 1 57026BC7
+P 7850 4050
+F 0 "PTC1" H 7850 4200 60  0000 C CNN
+F 1 "PTC_HandSoldering" H 7850 3900 60  0000 C CNN
+F 2 "" H 7850 4050 60  0000 C CNN
+F 3 "" H 7850 4050 60  0000 C CNN
+	1    7850 4050
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
