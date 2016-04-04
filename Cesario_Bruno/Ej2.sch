@@ -8,6 +8,7 @@ LIBS:PTC_handsoldering
 LIBS:resistor_0805_handsoldering
 LIBS:texas
 LIBS:XTAL_SMD_HandSoldering
+LIBS:Ej2-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
