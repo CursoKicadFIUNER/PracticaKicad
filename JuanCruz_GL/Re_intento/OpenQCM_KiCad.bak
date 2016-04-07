@@ -8,6 +8,7 @@ LIBS:capacitor_smd_handsoldering
 LIBS:XTAL_SMD_HandSoldering
 LIBS:74hct4053
 LIBS:ltc5507
+LIBS:OpenQCM_KiCad-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
