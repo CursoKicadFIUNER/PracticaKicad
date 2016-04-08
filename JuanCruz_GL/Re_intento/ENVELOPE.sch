@@ -1,0 +1,326 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:conn
+LIBS:resistor_0805_handsoldering
+LIBS:PTC_handsoldering
+LIBS:texas
+LIBS:capacitor_smd_handsoldering
+LIBS:XTAL_SMD_HandSoldering
+LIBS:74hct4053
+LIBS:ltc5507
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title "OpenQCM Diss"
+Date "2016-02-04"
+Rev "2.1"
+Comp "UNER"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L XTAL X1
+U 1 1 56E7657A
+P 3200 2350
+F 0 "X1" H 3200 2450 60  0000 C CNN
+F 1 "XTAL" H 3200 2250 60  0000 C CNN
+F 2 "OpenQCM:XTAL_con" H 3200 2350 60  0001 C CNN
+F 3 "" H 3200 2350 60  0000 C CNN
+F 4 "Value" H 3200 2350 60  0001 C CNN "Digikey/Mouser"
+	1    3200 2350
+	0    -1   1    0   
+$EndComp
+$Comp
+L 74HCT4053 U2
+U 1 1 56E76581
+P 6750 2450
+F 0 "U2" H 6750 2950 60  0000 C CNN
+F 1 "74HCT4053" H 6750 1950 60  0000 C CNN
+F 2 "OpenQCM:TSSOP16" H 6750 2500 60  0001 C CNN
+F 3 "" H 6750 2500 60  0000 C CNN
+F 4 "Value" H 6750 2450 60  0001 C CNN "Digikey/Mouser"
+	1    6750 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2050 3200 2050
+Wire Wire Line
+	3200 2050 3200 2150
+Wire Wire Line
+	3200 2650 3200 2650
+Wire Wire Line
+	3200 2650 3200 2550
+$Comp
+L Capacitor_SMD_HandSoldering C6
+U 1 1 56E7658D
+P 7800 2100
+F 0 "C6" H 7800 2250 60  0000 C CNN
+F 1 "100nF" H 7900 1950 60  0000 R CNN
+F 2 "OpenQCM:C_0603_HandSoldering" H 7800 2100 60  0001 C CNN
+F 3 "" H 7800 2100 60  0000 C CNN
+F 4 "Value" H 7800 2100 60  0001 C CNN "Digikey/Mouser"
+	1    7800 2100
+	0    -1   1    0   
+$EndComp
+$Comp
+L GND #PWR015
+U 1 1 56E76594
+P 7800 2350
+F 0 "#PWR015" H 7800 2100 50  0001 C CNN
+F 1 "GND" H 7800 2200 50  0000 C CNN
+F 2 "" H 7800 2350 60  0000 C CNN
+F 3 "" H 7800 2350 60  0000 C CNN
+	1    7800 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR016
+U 1 1 56E7659A
+P 7800 1650
+F 0 "#PWR016" H 7800 1500 50  0001 C CNN
+F 1 "+5V" H 7800 1790 50  0000 C CNN
+F 2 "" H 7800 1650 60  0000 C CNN
+F 3 "" H 7800 1650 60  0000 C CNN
+	1    7800 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 1650 7800 1850
+Wire Wire Line
+	7250 2050 7500 2050
+Wire Wire Line
+	7500 2050 7500 1800
+Wire Wire Line
+	7500 1800 7800 1800
+Connection ~ 7800 1800
+$Comp
+L GND #PWR017
+U 1 1 56E765A5
+P 7400 2350
+F 0 "#PWR017" H 7400 2100 50  0001 C CNN
+F 1 "GND" H 7400 2200 50  0000 C CNN
+F 2 "" H 7400 2350 60  0000 C CNN
+F 3 "" H 7400 2350 60  0000 C CNN
+	1    7400 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 2350 7250 2350
+Wire Wire Line
+	7400 2150 7400 2350
+Wire Wire Line
+	7400 2150 7250 2150
+Wire Wire Line
+	7250 2250 7400 2250
+Connection ~ 7400 2250
+Wire Wire Line
+	7250 2550 7400 2550
+Wire Wire Line
+	7400 2550 7400 2650
+Wire Wire Line
+	7250 2650 7500 2650
+Connection ~ 7400 2650
+$Comp
+L GND #PWR018
+U 1 1 56E765B5
+P 7400 2750
+F 0 "#PWR018" H 7400 2500 50  0001 C CNN
+F 1 "GND" H 7400 2600 50  0000 C CNN
+F 2 "" H 7400 2750 60  0000 C CNN
+F 3 "" H 7400 2750 60  0000 C CNN
+	1    7400 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 2750 7400 2750
+$Comp
+L GND #PWR019
+U 1 1 56E765BC
+P 6050 1850
+F 0 "#PWR019" H 6050 1600 50  0001 C CNN
+F 1 "GND" H 6050 1700 50  0000 C CNN
+F 2 "" H 6050 1850 60  0000 C CNN
+F 3 "" H 6050 1850 60  0000 C CNN
+	1    6050 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 1850 6200 1850
+Wire Wire Line
+	6200 1850 6200 2050
+Wire Wire Line
+	6200 2050 6250 2050
+Wire Wire Line
+	6250 2150 5850 2150
+NoConn ~ 6100 2350
+NoConn ~ 6100 2450
+NoConn ~ 6100 2550
+Wire Wire Line
+	6100 2350 6250 2350
+Wire Wire Line
+	6100 2450 6250 2450
+Wire Wire Line
+	6100 2550 6250 2550
+Wire Wire Line
+	5250 2650 6250 2650
+Wire Wire Line
+	6250 2750 5850 2750
+$Comp
+L LTC5507 U3
+U 1 1 56E765D1
+P 4600 4100
+F 0 "U3" H 4600 4400 60  0000 C CNN
+F 1 "LTC5507" H 4600 3800 60  0000 C CNN
+F 2 "OpenQCM:SOT-23-6" H 4600 4100 60  0001 C CNN
+F 3 "" H 4600 4100 60  0000 C CNN
+F 4 "Value" H 4600 4100 60  0001 C CNN "Digikey/Mouser"
+	1    4600 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR020
+U 1 1 56E765D8
+P 4050 3800
+F 0 "#PWR020" H 4050 3650 50  0001 C CNN
+F 1 "+3V3" H 4050 3940 50  0000 C CNN
+F 2 "" H 4050 3800 60  0000 C CNN
+F 3 "" H 4050 3800 60  0000 C CNN
+	1    4050 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3950 4050 3950
+Wire Wire Line
+	4050 3950 4050 3800
+$Comp
+L GND #PWR021
+U 1 1 56E765E0
+P 4000 4100
+F 0 "#PWR021" H 4000 3850 50  0001 C CNN
+F 1 "GND" H 4000 3950 50  0000 C CNN
+F 2 "" H 4000 4100 60  0000 C CNN
+F 3 "" H 4000 4100 60  0000 C CNN
+	1    4000 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4100 4000 4100
+Wire Wire Line
+	4100 4250 4100 4600
+Wire Wire Line
+	4100 4600 3750 4600
+$Comp
+L Capacitor_SMD_HandSoldering C4
+U 1 1 56E765EB
+P 5250 3600
+F 0 "C4" H 5250 3750 60  0000 C CNN
+F 1 "pF" H 5350 3450 60  0000 R CNN
+F 2 "OpenQCM:C_0603_HandSoldering" H 5250 3600 60  0001 C CNN
+F 3 "" H 5250 3600 60  0000 C CNN
+F 4 "Value" H 5250 3600 60  0001 C CNN "Digikey/Mouser"
+	1    5250 3600
+	0    -1   1    0   
+$EndComp
+$Comp
+L Capacitor_SMD_HandSoldering C5
+U 1 1 56E765F3
+P 5400 4100
+F 0 "C5" H 5400 4250 60  0000 C CNN
+F 1 "pF" H 5500 3950 60  0000 R CNN
+F 2 "OpenQCM:C_0603_HandSoldering" H 5400 4100 60  0001 C CNN
+F 3 "" H 5400 4100 60  0000 C CNN
+F 4 "Value" H 5400 4100 60  0001 C CNN "Digikey/Mouser"
+	1    5400 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR022
+U 1 1 56E765FA
+P 5850 4100
+F 0 "#PWR022" H 5850 3950 50  0001 C CNN
+F 1 "+3V3" H 5850 4240 50  0000 C CNN
+F 2 "" H 5850 4100 60  0000 C CNN
+F 3 "" H 5850 4100 60  0000 C CNN
+	1    5850 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4100 5150 4100
+Wire Wire Line
+	5100 4250 5850 4250
+Wire Wire Line
+	5850 4250 5850 4100
+Wire Wire Line
+	5650 4100 5700 4100
+Wire Wire Line
+	5700 4100 5700 4250
+Connection ~ 5700 4250
+Wire Wire Line
+	5100 3950 5250 3950
+Wire Wire Line
+	5250 3950 5250 3850
+Wire Wire Line
+	5250 2650 5250 3350
+Text Label 3200 2150 0    60   ~ 0
+xtal_P
+Text Label 3200 2650 0    60   ~ 0
+xtal_N
+Text Label 5850 2250 2    60   ~ 0
+xtal_P
+Text Label 5850 2950 2    60   ~ 0
+xtal_N
+Wire Wire Line
+	5850 2950 6100 2950
+Wire Wire Line
+	6100 2950 6100 2850
+Wire Wire Line
+	6100 2850 6250 2850
+Wire Wire Line
+	5850 2250 6250 2250
+Text HLabel 5850 2050 0    60   Input ~ 0
+Switch_IN-
+Wire Wire Line
+	5850 2150 5850 2050
+Text HLabel 5850 2750 0    60   Input ~ 0
+Switch_IN+
+Text HLabel 7500 2650 2    60   Input ~ 0
+DIG_CONTROL
+Text HLabel 3750 4600 0    60   Input ~ 0
+ENVELOPE_OUT
+Wire Notes Line
+	2950 1900 3650 1900
+Wire Notes Line
+	3650 1900 3650 2850
+Wire Notes Line
+	3650 2850 2950 2850
+Wire Notes Line
+	2950 2850 2950 1900
+Wire Notes Line
+	2950 3200 2950 5000
+Wire Notes Line
+	2950 5000 6100 5000
+Wire Notes Line
+	6100 5000 6100 3200
+Wire Notes Line
+	6100 3200 2950 3200
+Wire Notes Line
+	5100 1350 5100 3200
+Wire Notes Line
+	5100 3200 5150 3200
+Wire Notes Line
+	5100 1350 8250 1350
+Wire Notes Line
+	8250 1350 8250 3200
+Wire Notes Line
+	8250 3200 6050 3200
+Text Notes 3150 1850 0    60   ~ 0
+Crystal\n
+Text Notes 5150 1300 0    60   ~ 0
+Switch\n
+Text Notes 3000 3150 0    60   ~ 0
+Envelope detector
+$EndSCHEMATC
