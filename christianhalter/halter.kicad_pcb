@@ -3,7 +3,7 @@
   (general
     (links 40)
     (no_connects 3)
-    (area 132.724999 83.924999 171.575001 116.375)
+    (area 132.724999 83.924999 171.575001 115.475001)
     (thickness 1.6)
     (drawings 19)
     (tracks 884)
@@ -248,6 +248,11 @@
       (net 20 /ARDUINO/FREQUENCY_IN))
     (pad 1 thru_hole rect (at -16.51 0) (size 1.50622 3.01498) (drill 0.99822) (layers *.Cu *.Mask)
       (net 21 "Net-(P1-Pad1)"))
+    (model ../../../../../../Users/Alumno/Desktop/kicad/christianhalter/halter.3dshapes/Pin_Header_Straight_1x14.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module halter:PINHEAD1-14 locked (layer F.Cu) (tedit 5671A72C) (tstamp 57026B10)
@@ -296,6 +301,11 @@
       (net 1 GND))
     (pad 1 thru_hole rect (at -16.51 0 180) (size 1.50622 3.01498) (drill 0.99822) (layers *.Cu *.Mask)
       (net 31 "Net-(P2-Pad1)"))
+    (model ../../../../../../Users/Alumno/Desktop/kicad/christianhalter/halter.3dshapes/Pin_Header_Straight_1x14.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module halter:XTAL_con locked (layer F.Cu) (tedit 5671B757) (tstamp 57026B29)
@@ -311,6 +321,11 @@
       (net 35 /SWITCH/xtal_P))
     (pad 2 smd rect (at 5.75 -0.37) (size 5.4 5) (layers F.Cu F.Paste F.Mask)
       (net 34 /SWITCH/xtal_N))
+    (model ../../../../../../Users/Alumno/Desktop/kicad/christianhalter/halter.3dshapes/contact.wrl
+      (at (xyz 0.35 0.15 -0.05))
+      (scale (xyz 0.42 0.42 0.42))
+      (rotate (xyz -90 0 90))
+    )
   )
 
   (module halter:R_0805_HandSoldering (layer F.Cu) (tedit 54189DEE) (tstamp 57026E08)
@@ -454,6 +469,11 @@
       (net 1 GND))
     (pad 1 smd rect (at -1.1 -0.95 270) (size 1.06 0.65) (layers F.Cu F.Paste F.Mask)
       (net 33 "Net-(U1-Pad1)"))
+    (model ../../../../../../Users/Alumno/Desktop/kicad/christianhalter/halter.3dshapes/SOT-23-6.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module halter:TSSOP16 (layer F.Cu) (tedit 0) (tstamp 57026E53)
@@ -504,6 +524,11 @@
       (net 1 GND))
     (pad 8 smd rect (at -2.87528 2.27584 90) (size 1.39954 0.35052) (layers F.Cu F.Paste F.SilkS F.Mask)
       (net 1 GND))
+    (model ../../../../../../Users/Alumno/Desktop/kicad/christianhalter/halter.3dshapes/TSSOP-16-1.wrl
+      (at (xyz 0.02 0 -0.1))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 90 0))
+    )
   )
 
   (module halter:SOT-23-6 (layer F.Cu) (tedit 56F9557C) (tstamp 57026E61)
@@ -531,6 +556,11 @@
       (net 1 GND))
     (pad 1 smd rect (at -1.1 -0.95 270) (size 1.06 0.65) (layers F.Cu F.Paste F.Mask)
       (net 2 +3V3))
+    (model ../../../../../../Users/Alumno/Desktop/kicad/christianhalter/halter.3dshapes/SOT-23-6.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module halter:C_0603_HandSoldering (layer F.Cu) (tedit 541A9B4D) (tstamp 570275E7)
@@ -2027,10 +2057,15 @@
     (connect_pads (clearance 0.25))
     (min_thickness 0.254)
     (keepout (tracks not_allowed) (vias not_allowed) (copperpour allowed))
-    (fill (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
         (xy 170.4 105.6) (xy 170.2 106.7) (xy 168.4 105.9)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 170.103949 106.518332) (xy 168.849831 105.960946) (xy 170.243295 105.751927)
       )
     )
   )
@@ -2038,7 +2073,7 @@
     (connect_pads (clearance 0.25))
     (min_thickness 0.254)
     (keepout (tracks not_allowed) (vias not_allowed) (copperpour not_allowed))
-    (fill (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
         (xy 133.5 84.7) (xy 134.825098 84.7) (xy 136.5 84.7) (xy 136.5 87.6) (xy 133.5 87.6)
