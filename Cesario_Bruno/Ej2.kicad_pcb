@@ -241,6 +241,11 @@
       (net 1 GND))
     (pad 8 smd rect (at -2.87528 -2.27584 270) (size 1.39954 0.35052) (layers B.Cu B.Paste B.SilkS B.Mask)
       (net 1 GND))
+    (model "D:/Bioingenieria/CURSO KiCAD/RepoKicad/Cesario_Bruno/Ej2.3dshapes/TSSOP-16-1.wrl"
+      (at (xyz 0.02 0 -0.08))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 90 0))
+    )
   )
 
   (module Ej2:R_0805_HandSoldering (layer B.Cu) (tedit 57026902) (tstamp 57026852)
@@ -385,6 +390,11 @@
       (net 1 GND))
     (pad 1 smd rect (at 0 0 90) (size 0.625 0.5) (layers B.Cu B.Paste B.Mask)
       (net 35 "Net-(U1-Pad1)"))
+    (model "D:/Bioingenieria/CURSO KiCAD/RepoKicad/Cesario_Bruno/Ej2.3dshapes/SOT-23-6.wrl"
+      (at (xyz 0.048 -0.04 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Ej2:SOT-23-6 (layer B.Cu) (tedit 56F9FB5A) (tstamp 570268AD)
@@ -413,6 +423,11 @@
       (net 1 GND))
     (pad 1 smd rect (at 0 0 90) (size 0.625 0.5) (layers B.Cu B.Paste B.Mask)
       (net 2 +3V3))
+    (model "D:/Bioingenieria/CURSO KiCAD/RepoKicad/Cesario_Bruno/Ej2.3dshapes/SOT-23-6.wrl"
+      (at (xyz 0.0475 -0.038 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Ej2:C_0603_HandSoldering (layer B.Cu) (tedit 541A9B4D) (tstamp 570270BE)
@@ -635,6 +650,11 @@
       (net 22 /ArduinoCon/FREQUENCY_IN))
     (pad 1 thru_hole rect (at -16.51 0) (size 1.50622 3.01498) (drill 0.99822) (layers *.Cu *.Mask)
       (net 23 "Net-(P1-Pad1)"))
+    (model "D:/Bioingenieria/CURSO KiCAD/RepoKicad/Cesario_Bruno/Ej2.3dshapes/Pin_Header_Straight_1x14.wrl"
+      (at (xyz 0 0 -0.07000000000000001))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 180 0 0))
+    )
   )
 
   (module Ej2:PINHEAD1-14 locked (layer F.Cu) (tedit 5671A72C) (tstamp 57027119)
@@ -683,6 +703,11 @@
       (net 1 GND))
     (pad 1 thru_hole rect (at -16.51 0 180) (size 1.50622 3.01498) (drill 0.99822) (layers *.Cu *.Mask)
       (net 33 "Net-(P2-Pad1)"))
+    (model "D:/Bioingenieria/CURSO KiCAD/RepoKicad/Cesario_Bruno/Ej2.3dshapes/Pin_Header_Straight_1x14.wrl"
+      (at (xyz 0 0 -0.07000000000000001))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 180 0 0))
+    )
   )
 
   (module Ej2:XTAL_con locked (layer B.Cu) (tedit 5671B757) (tstamp 57027132)
@@ -698,6 +723,11 @@
       (net 5 /SWITCH_ENVELOPE/xtal_P))
     (pad 2 smd rect (at 5.75 0.37) (size 5.4 5) (layers B.Cu B.Paste B.Mask)
       (net 4 /SWITCH_ENVELOPE/xtal_N))
+    (model "D:/Bioingenieria/CURSO KiCAD/RepoKicad/Cesario_Bruno/Ej2.3dshapes/contact.wrl"
+      (at (xyz -0.34 -0.12 -0.04))
+      (scale (xyz 0.4 0.4 0.4))
+      (rotate (xyz 90 180 90))
+    )
   )
 
   (module Ej2:openQCM (layer F.Cu) (tedit 56731C84) (tstamp 57028584)
@@ -1756,7 +1786,7 @@
     (connect_pads (clearance 0.25))
     (min_thickness 0.254)
     (keepout (tracks allowed) (vias allowed) (copperpour not_allowed))
-    (fill (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
         (xy 146.431 101.2952) (xy 156.4386 101.2952) (xy 156.4386 104.7496) (xy 146.431 104.7496) (xy 146.431 101.2952)
