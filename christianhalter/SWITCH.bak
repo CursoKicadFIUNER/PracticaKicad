@@ -23,10 +23,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 6700 2250 0    60   Input ~ 0
-Switch_IN+
-Text HLabel 6600 1650 0    60   Input ~ 0
-Switch_IN-
 Text HLabel 7950 2150 2    60   Input ~ 0
 DIG_CONTROL
 Text HLabel 3000 4350 0    60   Input ~ 0
@@ -42,8 +38,6 @@ F 3 "" H 4150 3550 60  0000 C CNN
 	1    4150 3550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4150 3700 4150 3550
 $Comp
 L GND #PWR016
 U 1 1 56F93E2E
@@ -55,8 +49,6 @@ F 3 "" H 3950 3850 60  0000 C CNN
 	1    3950 3850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4250 4350 3000 4350
 $Comp
 L 74HCT4053 U2
 U 1 1 56F93E7F
@@ -151,7 +143,7 @@ U 1 1 56F9428F
 P 5900 3850
 F 0 "C5" H 5900 4000 60  0000 C CNN
 F 1 "pF" H 6000 3700 60  0000 C CNN
-F 2 "halter:C_0805_HandSoldering" H 5900 3850 60  0001 C CNN
+F 2 "halter:C_0603_HandSoldering" H 5900 3850 60  0001 C CNN
 F 3 "" H 5900 3850 60  0000 C CNN
 	1    5900 3850
 	1    0    0    -1  
@@ -162,7 +154,7 @@ U 1 1 56F9434C
 P 5800 3250
 F 0 "C4" H 5800 3400 60  0000 C CNN
 F 1 "pF" H 5900 3100 60  0000 C CNN
-F 2 "halter:C_0805_HandSoldering" H 5800 3250 60  0001 C CNN
+F 2 "halter:C_0603_HandSoldering" H 5800 3250 60  0001 C CNN
 F 3 "" H 5800 3250 60  0000 C CNN
 	1    5800 3250
 	0    1    1    0   
@@ -173,11 +165,59 @@ U 1 1 56F943E7
 P 8850 1750
 F 0 "C6" H 8850 1900 60  0000 C CNN
 F 1 "100nF" H 8950 1600 60  0000 C CNN
-F 2 "halter:C_0805_HandSoldering" H 8850 1750 60  0001 C CNN
+F 2 "halter:C_0603_HandSoldering" H 8850 1750 60  0001 C CNN
 F 3 "" H 8850 1750 60  0000 C CNN
 	1    8850 1750
 	0    1    1    0   
 $EndComp
+Text Label 4900 1900 0    60   ~ 0
+xtal_P
+Text Label 4900 2300 0    60   ~ 0
+xtal_N
+Text Label 6000 1750 2    60   ~ 0
+xtal_P
+Text Label 6100 2350 2    60   ~ 0
+xtal_N
+NoConn ~ 6850 1850
+NoConn ~ 6850 1950
+NoConn ~ 6850 2050
+$Comp
+L LTC5507 U3
+U 1 1 56F95CB0
+P 4900 3850
+F 0 "U3" H 4900 4200 60  0000 C CNN
+F 1 "LTC5507" H 4900 3400 60  0000 C CNN
+F 2 "halter:SOT-23-6" H 5800 3700 60  0001 C CNN
+F 3 "" H 5800 3700 60  0000 C CNN
+	1    4900 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG023
+U 1 1 56F96781
+P 5600 3650
+F 0 "#FLG023" H 5600 3745 50  0001 C CNN
+F 1 "PWR_FLAG" H 5600 3830 50  0000 C CNN
+F 2 "" H 5600 3650 60  0000 C CNN
+F 3 "" H 5600 3650 60  0000 C CNN
+	1    5600 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG024
+U 1 1 56F968DE
+P 5600 4150
+F 0 "#FLG024" H 5600 4245 50  0001 C CNN
+F 1 "PWR_FLAG" H 5600 4330 50  0000 C CNN
+F 2 "" H 5600 4150 60  0000 C CNN
+F 3 "" H 5600 4150 60  0000 C CNN
+	1    5600 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4150 3700 4150 3550
+Wire Wire Line
+	4250 4350 3000 4350
 Wire Wire Line
 	8850 1450 8850 1500
 Wire Wire Line
@@ -188,20 +228,10 @@ Wire Wire Line
 	8500 1450 8850 1450
 Wire Wire Line
 	6600 1650 6850 1650
-Text Label 4900 1900 0    60   ~ 0
-xtal_P
-Text Label 4900 2300 0    60   ~ 0
-xtal_N
-Text Label 6000 1750 2    60   ~ 0
-xtal_P
-Text Label 6100 2350 2    60   ~ 0
-xtal_N
 Wire Wire Line
 	6000 1750 6850 1750
 Wire Wire Line
 	6850 2350 6100 2350
-Wire Wire Line
-	6700 2250 6850 2250
 Wire Wire Line
 	7850 2250 8000 2250
 Wire Wire Line
@@ -215,9 +245,6 @@ Wire Wire Line
 Wire Wire Line
 	7850 1750 8000 1750
 Connection ~ 8000 1750
-NoConn ~ 6850 1850
-NoConn ~ 6850 1950
-NoConn ~ 6850 2050
 Wire Wire Line
 	7850 2150 7950 2150
 Wire Wire Line
@@ -234,17 +261,6 @@ Wire Wire Line
 Wire Wire Line
 	6150 3850 6400 3850
 Connection ~ 6400 3850
-$Comp
-L LTC5507 U3
-U 1 1 56F95CB0
-P 4900 3850
-F 0 "U3" H 4900 4200 60  0000 C CNN
-F 1 "LTC5507" H 4900 3400 60  0000 C CNN
-F 2 "halter:SOT-23-6" H 5800 3700 60  0001 C CNN
-F 3 "" H 5800 3700 60  0000 C CNN
-	1    4900 3850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3950 3850 4250 3850
 Wire Wire Line
@@ -263,32 +279,28 @@ Wire Wire Line
 	6600 1350 6850 1350
 Wire Wire Line
 	6850 1350 6850 1550
-$Comp
-L PWR_FLAG #FLG023
-U 1 1 56F96781
-P 5600 3650
-F 0 "#FLG023" H 5600 3745 50  0001 C CNN
-F 1 "PWR_FLAG" H 5600 3830 50  0000 C CNN
-F 2 "" H 5600 3650 60  0000 C CNN
-F 3 "" H 5600 3650 60  0000 C CNN
-	1    5600 3650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5600 3650 5600 3700
 Connection ~ 5600 3700
-$Comp
-L PWR_FLAG #FLG024
-U 1 1 56F968DE
-P 5600 4150
-F 0 "#FLG024" H 5600 4245 50  0001 C CNN
-F 1 "PWR_FLAG" H 5600 4330 50  0000 C CNN
-F 2 "" H 5600 4150 60  0000 C CNN
-F 3 "" H 5600 4150 60  0000 C CNN
-	1    5600 4150
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	5600 4150 5600 3850
 Connection ~ 5600 3850
+Text HLabel 5900 1000 0    60   Input ~ 0
+CON[1..2]
+Wire Bus Line
+	5900 1000 6500 1000
+Text Label 6600 1650 0    60   ~ 0
+CON1
+Wire Wire Line
+	6850 2250 6600 2250
+Text Label 6600 2250 0    60   ~ 0
+CON2
+Wire Bus Line
+	6500 1000 6500 2100
+Entry Bus Bus
+	6500 2100 6600 2200
+Wire Wire Line
+	6600 2250 6600 2200
+Entry Bus Bus
+	6500 1550 6600 1650
 $EndSCHEMATC

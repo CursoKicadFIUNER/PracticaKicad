@@ -1,4 +1,4 @@
-update=28/03/2016 11:08:03
+update=11/04/2016 10:21:29
 version=1
 last_client=kicad
 [pcbnew]
@@ -38,3 +38,4 @@ LibName6=libs/resistor_0805_handsoldering
 LibName7=libs/texas
 LibName8=libs/XTAL_SMD_HandSoldering
 LibName9=libs/ltc5507
+LibName10=libs/74hct4053_pringle

@@ -8,6 +8,7 @@ LIBS:resistor_0805_handsoldering
 LIBS:texas
 LIBS:XTAL_SMD_HandSoldering
 LIBS:ltc5507
+LIBS:74hct4053_pringle
 LIBS:halter-cache
 EELAYER 25 0
 EELAYER END
