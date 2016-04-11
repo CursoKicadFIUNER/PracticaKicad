@@ -1,5 +1,6 @@
 EESchema Schematic File Version 2
 LIBS:74hct4053
+LIBS:74hct4053_mp
 LIBS:capacitor_smd_handsoldering
 LIBS:conn
 LIBS:ltc5507
@@ -23,14 +24,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 8000 2250 2    60   Input ~ 0
-DIG_CONTROL
 Text HLabel 3550 5400 0    60   Input ~ 0
 ENVELOPE_OUT
-Text HLabel 6350 1750 0    60   Input ~ 0
-Switch_IN-
-Text HLabel 6350 2350 0    60   Input ~ 0
-Switch_IN+
 $Comp
 L LTC5507 U3
 U 1 1 56F95F3E
@@ -54,101 +49,6 @@ F 3 "" H 5600 4900 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Capacitor_SMD_HandSoldering C6
-U 1 1 56F961B0
-P 8750 1850
-F 0 "C6" H 8750 2000 60  0000 C CNN
-F 1 "100nF" H 8850 1700 60  0000 C CNN
-F 2 "Ej2:C_0603_HandSoldering" H 8750 1850 60  0001 C CNN
-F 3 "" H 8750 1850 60  0000 C CNN
-	1    8750 1850
-	0    1    1    0   
-$EndComp
-$Comp
-L 74HCT4053 U2
-U 1 1 56F96210
-P 7350 2050
-F 0 "U2" H 7350 2550 60  0000 C CNN
-F 1 "74HCT4053" H 7350 1550 60  0000 C CNN
-F 2 "Ej2:TSSOP16" H 7350 2100 60  0000 C CNN
-F 3 "" H 7350 2100 60  0000 C CNN
-	1    7350 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L +5V #PWR015
-U 1 1 56F96251
-P 8750 1050
-F 0 "#PWR015" H 8750 900 50  0001 C CNN
-F 1 "+5V" H 8750 1190 50  0000 C CNN
-F 2 "" H 8750 1050 60  0000 C CNN
-F 3 "" H 8750 1050 60  0000 C CNN
-	1    8750 1050
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR016
-U 1 1 56F96289
-P 8200 2000
-F 0 "#PWR016" H 8200 1750 50  0001 C CNN
-F 1 "GND" H 8200 1850 50  0000 C CNN
-F 2 "" H 8200 2000 60  0000 C CNN
-F 3 "" H 8200 2000 60  0000 C CNN
-	1    8200 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR017
-U 1 1 56F962A5
-P 8200 2500
-F 0 "#PWR017" H 8200 2250 50  0001 C CNN
-F 1 "GND" H 8200 2350 50  0000 C CNN
-F 2 "" H 8200 2500 60  0000 C CNN
-F 3 "" H 8200 2500 60  0000 C CNN
-	1    8200 2500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7850 1750 8200 1750
-Wire Wire Line
-	8200 1750 8200 2000
-Wire Wire Line
-	7850 1850 8200 1850
-Connection ~ 8200 1850
-Wire Wire Line
-	7850 1950 8200 1950
-Connection ~ 8200 1950
-Wire Wire Line
-	8200 2500 8200 2350
-Wire Wire Line
-	8200 2350 7850 2350
-Wire Wire Line
-	8750 1600 8750 1050
-$Comp
-L GND #PWR018
-U 1 1 56F963B9
-P 8750 2300
-F 0 "#PWR018" H 8750 2050 50  0001 C CNN
-F 1 "GND" H 8750 2150 50  0000 C CNN
-F 2 "" H 8750 2300 60  0000 C CNN
-F 3 "" H 8750 2300 60  0000 C CNN
-	1    8750 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8750 2300 8750 2100
-Wire Wire Line
-	7850 1650 8200 1650
-Wire Wire Line
-	8200 1650 8200 1300
-Wire Wire Line
-	8200 1300 8750 1300
-Connection ~ 8750 1300
-Wire Wire Line
-	6350 2350 6850 2350
-Wire Wire Line
-	6350 1750 6850 1750
-$Comp
 L XTAL X1
 U 1 1 56F964F2
 P 1750 2300
@@ -159,39 +59,14 @@ F 3 "" H 1750 2300 60  0000 C CNN
 	1    1750 2300
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	1750 2100 1750 1900
-Wire Wire Line
-	1750 2500 1750 2700
 Text Label 1750 2000 0    60   ~ 0
 xtal_P
 Text Label 1750 2600 0    60   ~ 0
 xtal_N
-Text Label 5900 1900 0    60   ~ 0
+Text Label 8050 2150 0    60   ~ 0
 xtal_P
-Wire Wire Line
-	5900 1900 6450 1900
-Wire Wire Line
-	6450 1900 6450 1850
-Wire Wire Line
-	6450 1850 6850 1850
-Text Label 5900 2600 0    60   ~ 0
+Text Label 8050 2050 0    60   ~ 0
 xtal_N
-Wire Wire Line
-	5900 2600 6600 2600
-Wire Wire Line
-	6600 2600 6600 2450
-Wire Wire Line
-	6600 2450 6850 2450
-NoConn ~ 6550 1950
-NoConn ~ 6550 2050
-NoConn ~ 6550 2150
-Wire Wire Line
-	6550 1950 6850 1950
-Wire Wire Line
-	6550 2050 6850 2050
-Wire Wire Line
-	6550 2150 6850 2150
 $Comp
 L Capacitor_SMD_HandSoldering C4
 U 1 1 56F96709
@@ -203,22 +78,6 @@ F 3 "" H 5000 4100 60  0000 C CNN
 	1    5000 4100
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5000 3850 5000 2250
-Wire Wire Line
-	5000 2250 6850 2250
-Wire Wire Line
-	5000 4350 5000 4750
-Wire Wire Line
-	5000 4750 4900 4750
-Wire Wire Line
-	5350 4900 4900 4900
-Wire Wire Line
-	6000 5050 4900 5050
-Wire Wire Line
-	6000 4850 6000 5050
-Wire Wire Line
-	6000 4900 5850 4900
 $Comp
 L +3.3V #PWR019
 U 1 1 56F968B1
@@ -230,7 +89,6 @@ F 3 "" H 6000 4850 60  0000 C CNN
 	1    6000 4850
 	1    0    0    -1  
 $EndComp
-Connection ~ 6000 4900
 $Comp
 L +3.3V #PWR020
 U 1 1 56F9695D
@@ -253,6 +111,75 @@ F 3 "" H 3400 4950 60  0000 C CNN
 	1    3400 4950
 	1    0    0    -1  
 $EndComp
+Text Notes 1350 1500 0    60   ~ 0
+Crystal
+Text Notes 1850 3500 0    60   ~ 0
+Envelope detector
+Text Notes 4850 750  0    60   ~ 0
+Switch
+$Comp
+L GND #PWR022
+U 1 1 56F955E2
+P 6500 2400
+F 0 "#PWR022" H 6500 2150 50  0001 C CNN
+F 1 "GND" H 6500 2250 50  0000 C CNN
+F 2 "" H 6500 2400 60  0000 C CNN
+F 3 "" H 6500 2400 60  0000 C CNN
+	1    6500 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG023
+U 1 1 56F95CE4
+P 5250 4850
+F 0 "#FLG023" H 5250 4945 50  0001 C CNN
+F 1 "PWR_FLAG" H 5250 5030 50  0000 C CNN
+F 2 "" H 5250 4850 60  0000 C CNN
+F 3 "" H 5250 4850 60  0000 C CNN
+	1    5250 4850
+	1    0    0    -1  
+$EndComp
+Text HLabel 5350 1050 0    60   Input ~ 0
+CON[1..2]
+Entry Bus Bus
+	5350 1050 5450 1150
+Text Label 5650 1900 0    60   ~ 0
+CON1
+Text Label 5650 2100 0    60   ~ 0
+CON2
+$Comp
+L 74HCT4053_MP U2
+U 1 1 570BE11A
+P 7150 2050
+F 0 "U2" H 7150 2400 60  0000 C CNN
+F 1 "74HCT4053_MP" H 7150 1700 60  0000 C CNN
+F 2 "Ej2:TSSOP16" H 7150 2050 60  0001 C CNN
+F 3 "" H 7150 2050 60  0000 C CNN
+	1    7150 2050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7900 1850
+NoConn ~ 7900 1950
+NoConn ~ 7900 2250
+Wire Wire Line
+	1750 2100 1750 1900
+Wire Wire Line
+	1750 2500 1750 2700
+Wire Wire Line
+	5000 2000 5000 3850
+Wire Wire Line
+	5000 4350 5000 4750
+Wire Wire Line
+	5000 4750 4900 4750
+Wire Wire Line
+	5350 4900 4900 4900
+Wire Wire Line
+	6000 5050 4900 5050
+Wire Wire Line
+	6000 4850 6000 5050
+Wire Wire Line
+	6000 4900 5850 4900
+Connection ~ 6000 4900
 Wire Wire Line
 	3550 5400 3650 5400
 Wire Wire Line
@@ -267,27 +194,10 @@ Wire Wire Line
 	3550 4750 3700 4750
 Wire Wire Line
 	3550 4750 3550 4600
-Wire Wire Line
-	8000 2250 7850 2250
-Wire Wire Line
-	7900 2250 7900 2150
-Wire Wire Line
-	7900 2150 7850 2150
-Connection ~ 7900 2250
-Wire Notes Line
-	1750 3550 9750 3550
-Wire Notes Line
-	9750 3550 9750 800 
-Wire Notes Line
-	9750 800  4750 800 
-Wire Notes Line
-	4750 800  4750 3550
 Wire Notes Line
 	1750 3550 1750 5750
 Wire Notes Line
 	1750 5750 6500 5750
-Wire Notes Line
-	6500 5750 6500 3550
 Wire Notes Line
 	1250 1550 1250 3100
 Wire Notes Line
@@ -296,53 +206,73 @@ Wire Notes Line
 	2350 3100 2350 1550
 Wire Notes Line
 	2350 1550 1250 1550
-Text Notes 1350 1500 0    60   ~ 0
-Crystal
-Text Notes 1850 3500 0    60   ~ 0
-Envelope detector
-Text Notes 4850 750  0    60   ~ 0
-Switch
+Wire Wire Line
+	5250 4850 5250 4900
+Connection ~ 5250 4900
+Wire Bus Line
+	5450 1150 5450 1850
+Wire Notes Line
+	9750 3550 9750 800 
+Wire Notes Line
+	9750 800  4750 800 
+Wire Notes Line
+	4750 800  4750 3550
+Wire Wire Line
+	7650 1850 7900 1850
+Wire Wire Line
+	7650 1950 7900 1950
+Wire Wire Line
+	7650 2250 7900 2250
+Wire Wire Line
+	7650 2050 8050 2050
+Wire Wire Line
+	7650 2150 8050 2150
+Wire Notes Line
+	9750 3550 1750 3550
+Wire Notes Line
+	6500 5750 6500 3550
+Wire Wire Line
+	6650 2000 5000 2000
+Wire Wire Line
+	6650 2100 5550 2100
+Wire Wire Line
+	6650 1900 5550 1900
+Wire Wire Line
+	5550 2100 5550 1950
+Entry Wire Line
+	5450 1800 5550 1900
+Entry Wire Line
+	5450 1850 5550 1950
+Wire Wire Line
+	6650 2200 6500 2200
+Wire Wire Line
+	6500 2200 6500 2400
+Connection ~ 5000 4400
+Wire Wire Line
+	5250 4400 5000 4400
 $Comp
-L PWR_FLAG #FLG022
+L PWR_FLAG #FLG024
 U 1 1 56F95320
 P 5250 4400
-F 0 "#FLG022" H 5250 4495 50  0001 C CNN
+F 0 "#FLG024" H 5250 4495 50  0001 C CNN
 F 1 "PWR_FLAG" H 5250 4580 50  0000 C CNN
 F 2 "" H 5250 4400 60  0000 C CNN
 F 3 "" H 5250 4400 60  0000 C CNN
 	1    5250 4400
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5250 4400 5000 4400
-Connection ~ 5000 4400
 $Comp
-L GND #PWR023
-U 1 1 56F955E2
-P 6450 1250
-F 0 "#PWR023" H 6450 1000 50  0001 C CNN
-F 1 "GND" H 6450 1100 50  0000 C CNN
-F 2 "" H 6450 1250 60  0000 C CNN
-F 3 "" H 6450 1250 60  0000 C CNN
-	1    6450 1250
-	-1   0    0    1   
+L PWR_FLAG #FLG025
+U 1 1 570C01C6
+P 5300 2650
+F 0 "#FLG025" H 5300 2745 50  0001 C CNN
+F 1 "PWR_FLAG" H 5300 2830 50  0000 C CNN
+F 2 "" H 5300 2650 60  0000 C CNN
+F 3 "" H 5300 2650 60  0000 C CNN
+	1    5300 2650
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6450 1250 6450 1650
-Wire Wire Line
-	6450 1650 6850 1650
-$Comp
-L PWR_FLAG #FLG024
-U 1 1 56F95CE4
-P 5250 4850
-F 0 "#FLG024" H 5250 4945 50  0001 C CNN
-F 1 "PWR_FLAG" H 5250 5030 50  0000 C CNN
-F 2 "" H 5250 4850 60  0000 C CNN
-F 3 "" H 5250 4850 60  0000 C CNN
-	1    5250 4850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5250 4850 5250 4900
-Connection ~ 5250 4900
+	5300 2650 5000 2650
+Connection ~ 5000 2650
 $EndSCHEMATC
